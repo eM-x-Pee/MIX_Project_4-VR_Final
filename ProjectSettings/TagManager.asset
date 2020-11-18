@@ -9,6 +9,7 @@ TagManager:
   - TestCube
   - Finger
   - SceneObject
+  - Bucket
   layers:
   - Default
   - TransparentFX
