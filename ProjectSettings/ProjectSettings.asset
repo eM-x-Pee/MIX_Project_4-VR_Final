@@ -130,6 +130,18 @@ PlayerSettings:
   - {fileID: 4800000, guid: 73f67c4e7bf718b4385aa6b1f8a06591, type: 3}
   - {fileID: 4800000, guid: 5e52aa58207bbf24d8eb8ec969e9ae88, type: 3}
   - {fileID: 4800000, guid: 69f342b79d37541489919a19cfd8a924, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -2903563678591880105, guid: e8dd20adeec9e11499b93c7750c02ab2, type: 2}
   - {fileID: 11400000, guid: d2fb7b9f64bd57d4bb183d3ef8efacea, type: 2}
   metroInputSource: 0
