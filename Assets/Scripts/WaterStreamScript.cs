@@ -8,6 +8,7 @@ public class WaterStreamScript : MonoBehaviour
     private LineRenderer lineRenderer = null;
     private ParticleSystem splashParticle = null;
 
+
     private Coroutine pourRoutine = null;
     private Vector3 targetPosition = Vector3.zero;
 
@@ -27,7 +28,6 @@ public class WaterStreamScript : MonoBehaviour
     {
         StartCoroutine(UpdateParticle());
         pourRoutine = StartCoroutine(BeginPour()); //pourRoutine to store for later
-
     }
 
     public void End()
@@ -45,7 +45,6 @@ public class WaterStreamScript : MonoBehaviour
 
             yield return null;
         }
-
         Destroy(gameObject); //destroy the pour gameObjects
     }
 
@@ -85,7 +84,6 @@ public class WaterStreamScript : MonoBehaviour
         Vector3 currentPoint = lineRenderer.GetPosition(index);
         Vector3 newPosition = Vector3.MoveTowards(currentPoint, targetPosition, Time.deltaTime * 1.75f);
         lineRenderer.SetPosition(index, newPosition);
-
     }
 
     private bool HasReachedPosition(int index, Vector3 targetPosition)
@@ -106,8 +104,7 @@ public class WaterStreamScript : MonoBehaviour
 
             yield return null;
         }
-
     }
 
-
+   
 }

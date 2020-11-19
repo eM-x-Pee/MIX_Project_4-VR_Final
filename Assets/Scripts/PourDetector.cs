@@ -49,7 +49,7 @@ public class PourDetector : MonoBehaviour
     private float CalculatePourAngle()
     {
         //return the degrees it is being tilted forward
-        return transform.forward.y * Mathf.Rad2Deg; //transform.up?
+        return transform.forward.y * Mathf.Rad2Deg; //transform.up if forward not OK
     }
 
     private WaterStreamScript CreateStream()
