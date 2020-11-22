@@ -18,7 +18,7 @@ public class Bucket_Slosh : MonoBehaviour
         Slosh();
 
         //Spin liquid while idle, remove if looks awkward
-        mLiquidMesh.transform.Rotate(Vector3.up * mRotateSpeed * Time.deltaTime, Space.Self);
+        //mLiquidMesh.transform.Rotate(Vector3.up * mRotateSpeed * Time.deltaTime, Space.Self);
     }
 
     private void Slosh()

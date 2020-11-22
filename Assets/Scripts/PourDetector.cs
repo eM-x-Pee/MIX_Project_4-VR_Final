@@ -7,7 +7,7 @@ public class PourDetector : MonoBehaviour
     public Transform origin = null;
     public GameObject streamPrefab = null;
 
-    public float currentWaterLevel = 0; //will be used to measure for how long you can pour water
+    private float currentWaterLevel = 0; //will be used to measure for how long you can pour water
     private float maxWaterLevel = 3;
 
     private bool corIsPaused = false;
@@ -15,6 +15,10 @@ public class PourDetector : MonoBehaviour
     private bool isPouring = false;
     private WaterStreamScript currentStream = null;
 
+    public float GetWaterLevel()
+    {
+        return currentWaterLevel;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -54,6 +58,16 @@ public class PourDetector : MonoBehaviour
     {
         //for checking if we reached the angle for pouring
         bool pourCheck = CalculatePourAngle() < pourThreshold;
+
+        //if empty, disable the water in the bucket, otherwise display it
+        if (currentWaterLevel == 0)
+        {
+            this.transform.GetChild(0).gameObject.SetActive(false);
+        }
+        if (currentWaterLevel > 0)
+        {
+            this.transform.GetChild(0).gameObject.SetActive(true);
+        }
 
         //can't have more water in the bucket than the max
         if (currentWaterLevel > maxWaterLevel)
