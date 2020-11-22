@@ -7,6 +7,9 @@ public class PourDetector : MonoBehaviour
     public Transform origin = null;
     public GameObject streamPrefab = null;
 
+    public int waterLevel = 100;
+
+
     private bool isPouring = false;
     private WaterStreamScript currentStream = null;
 
