@@ -242,7 +242,6 @@ MonoBehaviour:
   m_gridWidth: 10
   m_gridHeight: 10
   m_firePrefab: {fileID: 0}
-  m_destroyOnCollision: 0
 --- !u!114 &67515308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6089,7 +6088,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: db96e04f47f6c2a44bc6bb90f93602ec, type: 2}
+  - {fileID: 2100000, guid: b239fa2e72cbb0a4c8e8164d77331d72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6330,7 +6329,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7b666cad60012364d91416d8dae96db8, type: 2}
+  - {fileID: 2100000, guid: b239fa2e72cbb0a4c8e8164d77331d72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6992,7 +6991,6 @@ MonoBehaviour:
   m_gridWidth: 10
   m_gridHeight: 10
   m_firePrefab: {fileID: 2019403814}
-  m_destroyOnCollision: 0
 --- !u!114 &1929450810
 MonoBehaviour:
   m_ObjectHideFlags: 0
