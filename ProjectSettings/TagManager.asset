@@ -10,6 +10,9 @@ TagManager:
   - Finger
   - SceneObject
   - Bucket
+  - Fire
+  - Flint
+  - Steel
   layers:
   - Default
   - TransparentFX

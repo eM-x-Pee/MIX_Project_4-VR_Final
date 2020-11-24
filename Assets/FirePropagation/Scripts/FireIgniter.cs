@@ -13,8 +13,7 @@ public class FireIgniter : MonoBehaviour {
     private int m_gridHeight = 10;
     [SerializeField][Tooltip("Prefab of the fire to use")]
     private GameObject m_firePrefab;
-    [SerializeField][Tooltip("Delete this GameObject when there is a collision with it and the terrain or another GameObject?")]
-    private bool m_destroyOnCollision = false;
+    
     private bool m_fireIgnited = false;
 
     // Use this for initialization
@@ -40,6 +39,7 @@ public class FireIgniter : MonoBehaviour {
     // brief Call this once a GameObject has detected a collision
     public void OnCollision()
     {
+              
         GameObject fireGrid = new GameObject();
         fireGrid.name = "FireGrid";
         FireGrid grid = fireGrid.AddComponent<FireGrid>();
@@ -51,19 +51,15 @@ public class FireIgniter : MonoBehaviour {
     // param Collision
     void OnCollisionEnter(Collision collision)
     {
-        if (m_fireIgnited == false)
+        if(collision.collider.tag == "Steel")
         {
             OnCollision();
             m_fireIgnited = true;
-
-            if (m_destroyOnCollision)
-                Destroy();
         }
+            
+                     
+        
     }
 
-    // brief Destroy this object
-    void Destroy()
-    {
-        Destroy(gameObject);
-    }
+    
 }

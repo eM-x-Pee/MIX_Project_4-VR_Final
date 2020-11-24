@@ -6,6 +6,7 @@ public class Extinguisher : MonoBehaviour
 {
     public ParticleSystem part;
     public List<ParticleCollisionEvent> collisionEvents;
+    public FireVisualManager fireVisualManager;
     void Start()
     {
         part = GetComponent<ParticleSystem>();
@@ -19,12 +20,13 @@ public class Extinguisher : MonoBehaviour
 
         while (i < numCollisionEvents)
         {
-            if (other.tag == "Fire" || other.name =="Fire")
+            if (other.tag == "Fire" || other.name == "WildFireNoLight" || other.name == "FireGrid")
             {
                 print("Extinguish!");
-                other.SetActive(false);
+                Destroy(other);
             }
             i++;
         }
     }
+    
 }

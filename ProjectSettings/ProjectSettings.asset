@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: MIX_Project_3-VR_Mechanics
+  productName: MIX_Project_4-VR_Final
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -130,6 +130,11 @@ PlayerSettings:
   - {fileID: 4800000, guid: 73f67c4e7bf718b4385aa6b1f8a06591, type: 3}
   - {fileID: 4800000, guid: 5e52aa58207bbf24d8eb8ec969e9ae88, type: 3}
   - {fileID: 4800000, guid: 69f342b79d37541489919a19cfd8a924, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
